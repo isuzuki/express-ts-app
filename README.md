@@ -12,3 +12,8 @@ Express and TypeScript app
 ```sh
 yarn dev
 ```
+
+### openapi generate
+```sh
+ docker run --rm -v {$PWD}:/local openapitools/openapi-generator-cli generate -i /local/openapi.yml -g nodejs-express-server -o /local/out/
+```
